@@ -1,0 +1,12 @@
+name: 'Code Review Requirements'
+description: 'Allows specifying a single person that must grant approval on a pull request'
+inputs:
+  token:
+    description: GitHub Token
+    required: true
+  requiredReviewer:
+    description: GitHub Username of required reviewer
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
